@@ -1,0 +1,54 @@
+h1, footer {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.input-group {
+  width: 300px;
+  margin-bottom: 20px; 
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.bg {
+  
+    background-image: url("https://source.unsplash.com/-1_RZL8BGBM");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.done {
+  text-decoration: line-through #FFFF00;
+}
+
+button {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.deleteButton{
+  background-color: #9608E4;
+  color: #fff;
+  border-radius: 30px
+  margin: 20px;
+}
+
+.deleteButton:hover {
+  background-color: #F0007F;
+}
+
+li:hover {
+  color: #3E11E5;
+}
