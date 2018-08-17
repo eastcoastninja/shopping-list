@@ -1,33 +1,38 @@
-h1, footer {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.social-media {
-  margin-bottom: 5px;
-  display: flex;
-  justify-content: center;
-}
-
-.input-group {
-  width: 300px;
-  margin-bottom: 20px; 
-}
-
-html, body {
+html {
   height: 100%;
   font-family: 'Fira Sans', sans-serif;
 }
 
-.bg {
-  
+body {
     background-image: url("https://source.unsplash.com/-1_RZL8BGBM");
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+h1 {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  padding-left: 10px
+}
+
+.input-group {
+  padding-left: 10px;
+  width: 300px;
+  margin-bottom: 20px; 
+}
+
+.lists {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/*Buttons & event listeners*/
 
 .done {
   text-decoration: line-through #FFFF00;
@@ -52,3 +57,24 @@ button {
 li:hover {
   color: #3E11E5;
 }
+
+/*Bottom section*/
+
+.social-media {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 20px;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}
+

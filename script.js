@@ -1,21 +1,21 @@
-var button = document.getElementById("enter");
-var input = document.getElementById("userinput");
-var ul = document.querySelector("ul");
+const button = document.getElementById("enter");
+const input = document.getElementById("userinput");
+const ul = document.querySelector("ul");
 
-function inputLength() {
+const inputLength = () => {
 	return input.value.length;
 }
 
-function createListElement() {
-	var li = document.createElement("li");
+const createListElement = () => {
+	let li = document.createElement("li");
 	li.appendChild(document.createTextNode(input.value));
 	ul.appendChild(li);
 	input.value = "";
 	// wait for click on li
 	li.addEventListener("click", function() {
-		var finished = li.classList.toggle("done");
+		let finished = li.classList.toggle("done");
 
-		var deleteBtn = document.createElement("button");
+		let deleteBtn = document.createElement("button");
 		deleteBtn.classList.add("deleteButton");
 
 		// if clicked add delete button else remove delete button
@@ -35,13 +35,13 @@ function createListElement() {
 	
 }
 
-function addListAfterClick() {
+const addListAfterClick = () => {
 	if (inputLength() > 0) {
 		createListElement();
 	}
 }
 
-function addListAfterKeypress(event) {
+const addListAfterKeypress = (event) => {
 	if (inputLength() > 0 && event.keyCode === 13) {
 		createListElement();
 	}
